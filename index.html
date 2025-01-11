@@ -285,7 +285,7 @@
         </div>
       </div>-->
       <!-- Second Row -->
-      <div class="row mt-4">
+      <!--<div class="row mt-4">
         <div class="col-md-4 ">
           <div class="box ">
             <div class="img-box">
@@ -343,7 +343,7 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 <!-- end service section -->
 
 <!--Our Work section-->
@@ -524,6 +524,176 @@
   </section>
 
   <!-- end why us section -->
+
+  <!-- request section -->
+<section class="request_section layout_padding">
+  <div class="container">
+    <div class="heading_container heading_center mb-5">
+      <h2>Request a <span>Construction Service</span></h2>
+      <p class="lead text-center">Let's Build Your Vision Together</p>
+    </div>
+
+    <div class="row position-relative">
+      <!-- Left Image Column -->
+      <div class="col-lg-4">
+        <div class="request-image-left" data-aos="fade-right">
+          <img src="images/r1.jpg" alt="Commercial Construction" class="img-fluid rounded-lg shadow" 
+               style="width: 100%; height: 600px; object-fit: cover; transform: translateY(40px);">
+        </div>
+      </div>
+
+      <!-- Center Form Column -->
+      <div class="col-lg-4">
+        <div class="request-form-container bg-white rounded-lg shadow-lg p-4">
+          <form id="constructionRequestForm">
+            <div class="form-group mb-3">
+              <label>Project Type</label>
+              <select class="form-control" required>
+                <option value="">Select Service Type</option>
+                <option value="commercial">Commercial Construction</option>
+                <option value="residential">Residential Construction</option>
+                <option value="industrial">Industrial Construction</option>
+                <option value="renovation">Renovation</option>
+                <option value="specialty">Specialty Installation</option>
+              </select>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Project Location</label>
+              <input type="text" class="form-control" placeholder="Enter project address" required>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Start Date</label>
+                  <input type="date" class="form-control" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Budget Range</label>
+                  <select class="form-control" required>
+                    <option value="">Select Range</option>
+                    <option value="range1">Under $50,000</option>
+                    <option value="range2">$50,000 - $150,000</option>
+                    <option value="range3">$150,000 - $500,000</option>
+                    <option value="range4">$500,000+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Project Description</label>
+              <textarea class="form-control" rows="4" placeholder="Tell us about your project" required></textarea>
+            </div>
+
+            <div class="form-group mb-3">
+              <label>Contact Information</label>
+              <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+              <input type="email" class="form-control mb-2" placeholder="Email Address" required>
+              <input type="tel" class="form-control" placeholder="Phone Number" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 py-3">Submit Request</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Image Column -->
+      <div class="col-lg-4">
+        <div class="request-image-right" data-aos="fade-left">
+          <img src="images/r2.jpg" alt="Residential Construction" class="img-fluid rounded-lg shadow" 
+               style="width: 100%; height: 600px; object-fit: cover; transform: translateY(-40px);">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.request_section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.request-form-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.request-image-left, .request-image-right {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.request-image-left img, .request-image-right img {
+    transition: transform 0.3s ease;
+}
+
+.request-image-left img:hover, .request-image-right img:hover {
+    transform: scale(1.02);
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.heading_container h2 span {
+    color: #007bff;
+}
+
+@media (max-width: 991px) {
+    .request-image-left, .request-image-right {
+        display: none;
+    }
+    
+    .col-lg-4 {
+        margin-bottom: 30px;
+    }
+    
+    .request-form-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+</style>
+
+<script>
+document.getElementById('constructionRequestForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Add form submission logic here
+    alert('Thank you for your request! Our team will contact you within 24 hours.');
+});
+</script>
+
+<!--Request End-->
 
   <!-- faq section -->
 <section class="faq_section layout_padding">
